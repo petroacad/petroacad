@@ -1,8 +1,8 @@
 
-document.addEventListener("DOMContentLoaded", main);
-async function main() {
-document.getElementById("ctrpay").setAttribute("style", "background-color: #4d2557;color: white;font-size:16px;");
-document.getElementById("trpay").setAttribute("style", "color: white;font-size:16px;");
+document.addEventListener("DOMContentLoaded", startForm);
+
+
+
 function changeForm(){
 
   if (document.getElementById("radio_paypal").checked)
@@ -29,7 +29,7 @@ function changeForm(){
   }
   }
   changeForm();
-document.getElementById("paypal_form").style.display='none';
+
 function initPayPalButton() {
 var shipping = 0;
 var itemOptions = document.querySelector("#smart-button-container #item-options");
@@ -164,7 +164,7 @@ paypalForm.submit();
 // Submit user form after PayPal submission
 submittedForm.submit();
 });
-document.getElementById("country").setAttribute("style", "border-color: #4d2557;");
+
    /*document.getElementById('country').getElementsByTagName('option')[2].selected=true;*/
    changePrice();
    function initialValue(){
@@ -500,6 +500,10 @@ document.getElementById("d_code").style.display='none';
   document.getElementById("d_code").style.display='none';
   }
 function startForm(){
+  document.getElementById("ctrpay").setAttribute("style", "background-color: #4d2557;color: white;font-size:16px;");
+document.getElementById("trpay").setAttribute("style", "color: white;font-size:16px;");
+document.getElementById("paypal_form").style.display='none';
+document.getElementById("country").setAttribute("style", "border-color: #4d2557;");
   chkEmail();
   chkValue();
   changePrice();
@@ -614,5 +618,3 @@ paypalForm.submit();
 // Submit user form after PayPal submission
 userForm.submit();
 })
-}
-main();
