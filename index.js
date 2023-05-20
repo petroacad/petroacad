@@ -1,5 +1,5 @@
-import './style.css';     
-document.getElementById("ctrpay").setAttribute("style", "background-color: #4d2557;color: white;font-size:16px;");
+
+                  document.getElementById("ctrpay").setAttribute("style", "background-color: #4d2557;color: white;font-size:16px;");
 		  document.getElementById("trpay").setAttribute("style", "color: white;font-size:16px;");
 		  function changeForm(){
 		  
