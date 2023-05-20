@@ -492,7 +492,7 @@ document.getElementById("3").style.display = 'none';
      document.getElementById("3").style.display = 'block';
      
    }
-document.getElementById("d_code").style.display='none';
+
   function insertValue(){
   if (document.getElementById("radio_4").checked)
   document.getElementById("d_code").style.display='block';
@@ -500,6 +500,8 @@ document.getElementById("d_code").style.display='none';
   document.getElementById("d_code").style.display='none';
   }
 function startForm(){
+  initPayPalButton();
+  document.getElementById("d_code").style.display='none';
   document.getElementById("ctrpay").setAttribute("style", "background-color: #4d2557;color: white;font-size:16px;");
 document.getElementById("trpay").setAttribute("style", "color: white;font-size:16px;");
 document.getElementById("paypal_form").style.display='none';
