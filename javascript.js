@@ -1,3 +1,4 @@
+async function main() {
 document.addEventListener("DOMContentLoaded", statForm);
 document.getElementById("ctrpay").setAttribute("style", "background-color: #4d2557;color: white;font-size:16px;");
 document.getElementById("trpay").setAttribute("style", "color: white;font-size:16px;");
@@ -612,3 +613,5 @@ paypalForm.submit();
 // Submit user form after PayPal submission
 userForm.submit();
 })
+}
+main();
