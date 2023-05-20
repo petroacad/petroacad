@@ -118,7 +118,7 @@
   }
   initPayPalButton();
 
-<script>
+
       const submittedForm = document.getElementById('paypal_form');
 //const submitBtn = document.getElementById('registration');
 const submitButton = document.getElementById('payNow');
